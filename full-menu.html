@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lengkap - carivon Caffe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header class="hero">
+        <nav>
+            <div class="logo">Ryan's Caffe</div>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html#about">Tentang Kami</a></li>
+                <li><a href="index.html#services">Layanan</a></li>
+                <li><a href="index.html#gallery">Galeri</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="index.html#contact">Kontak</a></li>
+                <li><a href="#menu" class="discount">Discount</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1 style="font-family: 'Playfair Display', serif;">Menu Lengkap Carivon Caffe</h1>
+            <p>Nikmati menu lengkap kopi favoritmu!</p>
+        </div>
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-main-video">
+                <source src="1.mp4" type="video/mp4">
+                Browser tidak mendukung video.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+    </header>
+
+    <section id="menu" class="menu-section">
+        <h2>Menu Lengkap</h2>
+        <p class="promo-text">Temukan minuman favorit Anda</p>
+        
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="menu-card hot group cursor-pointer data-category=hot bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden border border-gray-100" onclick="openModal('Espresso', 'espresso.jpg', 'Espresso pekat dengan crema tebal.', 15000)">
+                    <div class="flex">
+                        <div class="w-1/2 h-64 md:h-72">
+                            <img src="matcha milkshake vanila ice cream milk.png" alt="matcha milkshake vanila ice cream milk" class="w-full h-full object-cover rounded-l-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2 leading-tight">matcha milkshake vanila ice cream milk</h3>
+                            <p class="text-brown-600 font-semibold text-lg mb-1">Rp 15.000 <span class="text-sm text-gray-500 font-normal line-through ml-1">Rp 20.000</span></p>
+                            <p class="text-gray-500 text-sm leading-relaxed">matcha premium Teksturnya yang velvety dan dingin memberikan sensasi tenang.It’s not just a drink, it’s a mood..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card hot group cursor-pointer data-category=hot bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden border border-gray-100" onclick="openModal('Long Coffee', 'longcoffe.jpg', 'Kopi panjang hitam aroma kuat.', 18000)">
+                    <div class="flex">
+                        <div class="w-1/2 h-64 md:h-72">
+                            <img src="aren latte.png" alt="aren latte" class="w-full h-full object-cover rounded-l-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2 leading-tight">aren latte</h3>
+                            <p class="text-brown-600 font-semibold text-lg mb-1">Rp 18.000 <span class="text-sm text-gray-500 font-normal line-through ml-1">Rp 25.000</span></p>
+                            <p class="text-gray-500 text-sm leading-relaxed">Perpaduan harmonis antara double shot espresso pilihan, susu segar yang creamy, dan pemanis alami dari gula aren asli..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card hot group cursor-pointer data-category=hot bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden border border-gray-100" onclick="openModal('Cappuccino', 'cappucino.jpg', 'Cappuccino creamy dengan latte art.', 20000)">
+                    <div class="flex">
+                        <div class="w-1/2 h-64 md:h-72">
+                            <img src="matcha buble tea.png" alt="matcha buble tea" class="w-full h-full object-cover rounded-l-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2 leading-tight">matcha buble tea</h3>
+                            <p class="text-brown-600 font-semibold text-lg mb-1">Rp 20.000 <span class="text-sm text-gray-500 font-normal line-through ml-1">Rp 35.000</span></p>
+                            <p class="text-gray-500 text-sm leading-relaxed">Perpaduan seru antara creamy matcha milk yang dingin dengan brown sugar boba yang kenyal dan manis..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card iced group cursor-pointer data-category=iced bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden border border-gray-100" onclick="openModal('Ice Americano', 'americano.jpg', 'Kopi hitam dingin menyegarkan.', 20000)">
+                    <div class="flex">
+                        <div class="w-1/2 h-64 md:h-72">
+                            <img src="cano.png" alt="Ice Americano" class="w-full h-full object-cover rounded-l-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2 leading-tight">Ice Americano</h3>
+                            <p class="text-brown-600 font-semibold text-lg mb-1">Rp 20.000 <span class="text-sm text-gray-500 font-normal line-through ml-1">Rp 30.000</span></p>
+                            <p class="text-gray-500 text-sm leading-relaxed">Kopi hitam dingin menyegarkan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card iced group cursor-pointer data-category=iced bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden border border-gray-100" onclick="openModal('Ice Latte', 'latte.jpg', 'Latte dingin lembut dan creamy.', 22000)">
+                    <div class="flex">
+                        <div class="w-1/2 h-64 md:h-72">
+                            <img src="cappucino.jpg" alt="cappuccino" class="w-full h-full object-cover rounded-l-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2 leading-tight">cappucino</h3>
+                            <p class="text-brown-600 font-semibold text-lg mb-1">Rp 22.000 <span class="text-sm text-gray-500 font-normal line-through ml-1">Rp 32.000</span></p>
+                            <p class="text-gray-500 text-sm leading-relaxed">Cappuccino creamy dengan latte art.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card traditional group cursor-pointer data-category=traditional bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden border border-gray-100" onclick="openModal('Kopi Tubruk', 'kopi.jpg', 'Kopi tradisional autentik Indonesia.', 12000)">
+                    <div class="flex">
+                        <div class="w-1/2 h-64 md:h-72">
+                            <img src="matcha crepe cake.png" alt="matcha crepe cake" class="w-full h-full object-cover rounded-l-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2 leading-tight">matcha crepe cake</h3>
+                            <p class="text-brown-600 font-semibold text-lg mb-1">Rp 12.000 <span class="text-sm text-gray-500 font-normal line-through ml-1">Rp 18.000</span></p>
+                            <p class="text-gray-500 text-sm leading-relaxed">Nikmati kemewahan puluhan lapisan crepe tipis yang lembut, diselingi dengan balutan matcha pastry cream yang ringan dan tidak terlalu manis..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card iced group cursor-pointer data-category=iced bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden border border-gray-100" onclick="openModal('Ice Americano', 'americano.jpg', 'Kopi hitam dingin menyegarkan.', 20000)">
+                    <div class="flex">
+                        <div class="w-1/2 h-64 md:h-72">
+                            <img src="matcha reguler.png" alt="matcha reguler" class="w-full h-full object-cover rounded-l-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2 leading-tight">matcha reguler</h3>
+                            <p class="text-brown-600 font-semibold text-lg mb-1">Rp 20.000 <span class="text-sm text-gray-500 font-normal line-through ml-1">Rp 30.000</span></p>
+                            <p class="text-gray-500 text-sm leading-relaxed">Segelas matcha dingin yang menyegarkan dengan kadar manis yang pas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card iced group cursor-pointer data-category=iced bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden border border-gray-100" onclick="openModal('Ice Americano', 'americano.jpg', 'Kopi hitam dingin menyegarkan.', 20000)">
+                    <div class="flex">
+                        <div class="w-1/2 h-64 md:h-72">
+                            <img src="tiramisu.png" alt="tiramisu" class="w-full h-full object-cover rounded-l-2xl group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2 leading-tight">tiramisu</h3>
+                            <p class="text-brown-600 font-semibold text-lg mb-1">Rp 20.000 <span class="text-sm text-gray-500 font-normal line-through ml-1">Rp 30.000</span></p>
+                            <p class="text-gray-500 text-sm leading-relaxed">Kue lapis kopi khas Italia dengan krim mascarpone premium yang lembut dan bubuk kakao murni. Rich, creamy..</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal untuk Detail Menu -->
+    <div id="menuModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="" class="modal-image">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+            <p class="modal-price">Harga: <span id="modalPrice"></span></p>
+        </div>
+    </div>
+
+    <footer class="footer-bottom">
+        <div class="footer-grid">
+            <div>
+                <h4>Jam Operasional</h4>
+                <p>Senin–Minggu: 11:00–21:00</p>
+            </div>
+            <div>
+                <h4>Sosial Media</h4>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/carivon_caffe" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram" class="social-logo">
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Kontak</h4>
+                <p>cofferyan@gmail.com</p>
+                <p>(021) 123-4567</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Maps -->
+    <div class="footer-maps">
+        <iframe id="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.309748892717!2d106.652!3d-6.215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f43e%3A0x1b1a0b1a0b1a0b1a!2sTangerang%2C%20Banten!5e0!3m2!1sen!2sid!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+    
